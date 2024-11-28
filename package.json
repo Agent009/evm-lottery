@@ -10,7 +10,9 @@
     "hh:clean": "hardhat clean",
     "hh:test": "hardhat run ./scripts/Test.ts",
     "token:test": "hardhat run ./scripts/LotteryToken/Test.ts",
-    "lottery:test": "hardhat run ./scripts/Lottery/Test.ts"
+    "token:deploy": "ts-node -r tsconfig-paths/register --files scripts/LotteryToken/Deploy.ts",
+    "lottery:test": "hardhat run ./scripts/Lottery/Test.ts",
+    "lottery:deploy": "ts-node -r tsconfig-paths/register --files scripts/Lottery/Deploy.ts"
   },
   "author": "Mohammad Amir <amir@connextar.com>",
   "license": "ISC",
